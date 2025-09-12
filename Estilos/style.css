@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #6EE7B7, #3B82F6) no-repeat;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    width: 90vw;
+    height: 400px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+progress {
+    display: flex;
+    margin: 0 auto;
+    width: 85vw;
+    margin-bottom: 10px;
+}
+
+.div-input {
+    display: flex;
+    width: 85vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-tarefa {
+    width: 65vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+.BT-Adiciona {
+    width: 15vw;
+    border-radius: 10px;
+    background-color: rgb(0, 190, 190);
+    color: white;
+    border: solid 1px black;
+}
+
+li {
+    display : flex;
+    justify-Content : space-between;
+    padding : 0vw 3vw 0vw 3vw;
+    align-Items : center;
+    background-color: rgba(144, 216, 224, 0.424);
+    height:35px;
+    margin:8px 2.5vw 8px 2.5vw;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.302);
+    text-transform: capitalize;
+}
+
+li input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.BT-Adiciona:hover {
+    scale: 1.1;
+}
+
+.filtros {
+    display: flex; 
+    justify-content: space-between;
+    width: 85vw; 
+    margin: 0 auto;
+}
+
+button[type=submit] {
+    padding: 8px;
+    border-radius: 10px; 
+    border: solid 1px black;
+    margin: 4px;
+
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(0, 190, 190);
+    color: white;
+}
