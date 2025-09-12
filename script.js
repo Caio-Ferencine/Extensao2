@@ -28,12 +28,7 @@ function renderTarefas(filtro = "todas") {
 
   tarefasFiltradas.forEach((tarefa, index) => {
     const li = document.createElement("li");
-    li.style.display = "flex";
-    li.style.justifyContent = "space-between";
-    li.style.padding = "0vw 3vw 0vw 3vw"
-    li.style.alignItems = "center";
-    li.style.marginBottom = "8px";
-
+    
     // Checkbox
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -55,8 +50,7 @@ function renderTarefas(filtro = "todas") {
 
     // Botão editar
     const btnEdit = document.createElement("button");
-    btnEdit.textContent = "Editar";
-    btnEdit.style.marginLeft = "10px";
+    btnEdit.innerHTML = '<span class="material-symbols-outlined">edit</span>';
     btnEdit.addEventListener("click", () => {
       const novoTexto = prompt("Edite a tarefa:", tarefa.texto);
       if (novoTexto !== null && novoTexto.trim() !== "") {
@@ -68,8 +62,9 @@ function renderTarefas(filtro = "todas") {
 
     // Botão excluir
     const btnDelete = document.createElement("button");
-    btnDelete.textContent = "Excluir";
+    btnDelete.innerHTML = '<span class="material-symbols-outlined">delete</span>';
     btnDelete.style.marginLeft = "5px";
+    btnDelete.style.marginRight = "-2vw";
     btnDelete.addEventListener("click", () => {
       tarefas.splice(index, 1);
       salvarTarefas();
