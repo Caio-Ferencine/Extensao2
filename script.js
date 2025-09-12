@@ -97,13 +97,18 @@ function renderTarefas(filtro = "todas") {
 
 // Atualiza a barra de progresso
 function atualizarProgresso() {
+  const bar = document.getElementById("progress-bar");
+  const text = document.getElementById("progress-text");
+
   if (tarefas.length === 0) {
-    progress.value = 0;
-    progress.max = 1;
+    bar.style.width = "0%";
+    text.textContent = "0%";
   } else {
     const concluidas = tarefas.filter(t => t.concluida).length;
-    progress.max = tarefas.length;
-    progress.value = concluidas;
+    const porcentagem = Math.round((concluidas / tarefas.length) * 100);
+
+    bar.style.width = porcentagem + "%";
+    text.textContent = porcentagem + "%";
   }
 }
 

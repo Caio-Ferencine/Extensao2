@@ -16,11 +16,11 @@ main {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
+    padding-bottom: 10px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     width: 90vw;
-    height: 400px;
 }
 
 main h1 {
@@ -28,13 +28,30 @@ main h1 {
     padding: 10px;
 }
 
-progress {
-    display: flex;
-    margin: 0 auto;
-    width: 85vw;
-    margin-bottom: 10px;
+.progress-container {
+  width: 85vw;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto 15px auto;
 }
 
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(135deg, #6EE7B7, #3B82F6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+#progress-text {
+  margin-left: 35px;
+  font-weight: bold;
+}
 .div-input {
     display: flex;
     width: 85vw;
