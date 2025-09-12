@@ -60,11 +60,9 @@ progress {
 
 li {
     display : flex;
-    justify-Content : space-between;
-    padding : 0vw 3vw 0vw 3vw;
     align-Items : center;
     background-color: rgba(144, 216, 224, 0.424);
-    height:35px;
+    height:40px;
     margin:8px 2.5vw 8px 2.5vw;
     border-radius: 8px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.302);
@@ -72,7 +70,8 @@ li {
 }
 
 li input[type="checkbox"] {
-  margin-right: 5px;
+    margin: 0vw 1.3vw 0vw -1.5vw;
+    transform: scale(1.5); 
 }
 
 .BT-Adiciona:hover {
