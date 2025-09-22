@@ -52,6 +52,7 @@ main h1 {
   margin-left: 35px;
   font-weight: bold;
 }
+
 .div-input {
     display: flex;
     width: 85vw;
@@ -76,6 +77,7 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 80%;
 }
 
 li {
@@ -96,10 +98,6 @@ li {
 li  div input[type="checkbox"] {
     margin: 0vw 1.5vw 0vw -1.5vw;
     transform: scale(1.5); 
-}
-
-span {
-
 }
 
 .BT-Adiciona:hover {
